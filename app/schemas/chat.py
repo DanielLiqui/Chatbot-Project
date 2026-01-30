@@ -5,3 +5,5 @@ class ChatRequest(BaseModel):
 
 class ChatResponse(BaseModel):
     intent: str
+    confidence: float
+    response: str
