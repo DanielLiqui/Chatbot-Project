@@ -15,7 +15,7 @@ export default function Chat() {
 
     const botMsg = {
       role: "bot",
-      text: response.message || `Intent: ${response.intent}`,
+      text: response.response ?? "No answer from bot",
     };
 
     setMessages((prev) => [...prev, botMsg]);
